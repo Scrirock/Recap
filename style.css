@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-size: 2rem;
+    background-color: #B5E2FA;
+}
+
+nav{
+    background-color: #0FA3B1;
+    height: 5.3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+nav li{
+    font-size: 2.5rem;
+    display: inline-block;
+    width: 100%;
+}
+
+a{
+    color: #F7A072;
+    text-decoration: none;
+}
+
+.menu{
+    color: #F9F7F3;
+    position: absolute;
+    top: 1.2rem;
+    transition-duration: .3s;
+}
+
+.menu:hover{
+    text-decoration: underline;
+    font-size: 2.6rem;
+}
+
+figcaption{
+    font-style: italic;
+}
+
+#dataCard{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+}
+
+#dataCard p{
+    margin: 1.5rem;
+}
+
+.info{
+    text-decoration: underline;
+    font-size: 2.4rem;
+}
+
+#passion{
+    width: 33%;
+}
+
+.container{
+    width: 100%;
+    margin: 5rem;
+}
+
+dl{
+    margin-top: 2rem;
+}
+
+dd{
+    margin-left: 2rem;
+}
+
+section, form, section li, aside, figure{
+    margin: 2rem;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 33rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
