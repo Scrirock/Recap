@@ -108,3 +108,16 @@ fieldset{
     justify-content: space-between;
     padding: 1rem 3rem;
 }
+
+.littleTitle{
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+h1, h2, h3{
+    width: 10%;
+}
+
+section ul{
+    margin: 1.5rem;
+}
