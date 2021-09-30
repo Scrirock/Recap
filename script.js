@@ -76,7 +76,6 @@ function changeColor(){
         let red = [15, 155, 78, 35, 250, 46, 98, 50, 3, 245, 65, 150, 20, 97, 46, 31, 158];
         let green = [95, 15, 65, 32, 150, 245, 98, 45, 150, 26, 78, 62, 18, 148, 64, 150, 195];
         let blue = [255, 64, 150, 64, 85, 150, 145, 78, 120, 12, 26, 48, 150, 150, 147, 255, 20];
-        console.log(red + "/ "+ blue)
         spanLetter[j].style.color = "rgb("+ red[j] + ", " + green[j] + ", " + blue[j] +")";
         spanLetter[j].style.fontStyle = "italic";
     }
@@ -125,3 +124,32 @@ for (let label of labels){
         j = 0;
     });
 }
+
+/**
+ * Change the css of the figure and figcaption element
+ */
+let figure = document.querySelector("figure");
+let figcaption = document.querySelector("figcaption");
+
+if (figure && figcaption){
+    //figure
+    figure.style.border = "thin #c0c0c0 solid";
+    figure.style.display = "flex";
+    figure.style.flexFlow = "column";
+    figure.style.padding = "5px";
+
+    //figcaption
+    figcaption.style.backgroundColor = "#222";
+    figcaption.style.color = "#fff";
+    figcaption.style.font = "italic smaller sans-serif";
+    figcaption.style.padding = "3px";
+    figcaption.style.textAlign = "center";
+}
+
+/**
+ * Add a flip card effect to the figure element
+ */
+let card = document.querySelector("#card");
+card.addEventListener("click", ()=>{
+    card.classList.toggle("flipcard");
+})
