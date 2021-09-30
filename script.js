@@ -2,6 +2,9 @@ let h1 = document.querySelector("h1");
 let h2 = document.querySelector("h2");
 let h3 = document.querySelector("h3");
 
+/**
+ * Animation for the title
+ */
 if (h1 && h2 && h3){
     h1.animate([
 
@@ -36,8 +39,10 @@ if (h1 && h2 && h3){
     });
 }
 
+/**
+ *Hide and show section block
+ */
 let sections = document.querySelectorAll("section ul");
-
 for (let section of sections){
     section.style.height = "0";
     section.style.display = "none";
@@ -61,6 +66,9 @@ for (let section of sections){
     }
 }
 
+/**
+ *Change the color of the label's letter
+ */
 let j = 0;
 function changeColor(){
     let spanLetter = document.querySelectorAll("form span");
@@ -86,6 +94,10 @@ let flag = 1;
 let colorInterval;
 let letterArray = [];
 labels = document.querySelectorAll("label");
+/**
+ * for each label add a listener to check if the user put his cursor on a  label element
+ * and a listener to know when his cursor leaves the element
+ */
 for (let label of labels){
     label.addEventListener("mouseover", ()=>{
         if (flag){
