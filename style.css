@@ -23,13 +23,14 @@ nav{
     align-items: center;
 }
 
-nav ul{
+nav div{
     display: flex;
     justify-content: space-around;
     width: 80%;
+    height: 100%;
 }
 
-nav li{
+nav a{
     font-size: 2.5rem;
     display: inline-block;
     width: 100%;
@@ -42,7 +43,7 @@ a{
 
 .menu{
     color: #F9F7F3;
-    position: absolute;
+    position: relative;
     top: 1.2rem;
     transition-duration: .3s;
 }
@@ -90,7 +91,7 @@ dd{
     margin-left: 2rem;
 }
 
-section, form, section li, aside, figure{
+section, form, section li, aside, figure, .container ul{
     margin: 2rem;
 }
 

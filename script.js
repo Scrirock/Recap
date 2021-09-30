@@ -150,6 +150,42 @@ if (figure && figcaption){
  * Add a flip card effect to the figure element
  */
 let card = document.querySelector("#card");
-card.addEventListener("click", ()=>{
-    card.classList.toggle("flipcard");
-})
+if (card){
+    card.addEventListener("click", ()=>{
+        card.classList.toggle("flipcard");
+    })
+}
+
+/**
+ * read json + create element dd and ul
+ */
+
+let xhrdd = new XMLHttpRequest();
+xhrdd.onload = function() {
+    let message = JSON.parse(xhrdd.responseText);
+    let dlMessage = document.querySelector("dl");
+
+    dlMessage.innerHTML += `
+                <dd>${message.content}</dd>
+            `;
+};
+
+xhrdd.open('GET', '/dd.json');
+xhrdd.send();
+
+let xhrul = new XMLHttpRequest();
+xhrul.onload = function() {
+    let message = JSON.parse(xhrul.responseText);
+    let ulMessage = document.querySelector(".container");
+
+    ulMessage.innerHTML += `
+                <ul>
+                    ${message.content}
+                </ul>
+            `;
+
+};
+
+xhrul.open('GET', '/ul.json');
+xhrul.send();
+
