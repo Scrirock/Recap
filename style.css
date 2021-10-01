@@ -116,7 +116,8 @@ fieldset{
 }
 
 h1, h2, h3{
-    width: 10%;
+    width: 100%;
+    position: relative;
 }
 
 section ul{
@@ -129,6 +130,7 @@ section ul{
     height: 300px;
     top: 150px;
     transform: translate(-50%, -50%);
+    left: 5rem;
 }
 
 #card{
