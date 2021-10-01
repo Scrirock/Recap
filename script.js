@@ -133,7 +133,7 @@ xhrdd.onload = function() {
             `;
 };
 
-xhrdd.open('GET', '/dd.json');
+xhrdd.open('GET', './dd.json');
 xhrdd.send();
 
 let xhrul = new XMLHttpRequest();
@@ -149,5 +149,5 @@ xhrul.onload = function() {
 
 };
 
-xhrul.open('GET', '/ul.json');
+xhrul.open('GET', './ul.json');
 xhrul.send();
