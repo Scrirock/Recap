@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,42 +11,28 @@
 <body>
 
     <header>
-        <nav>
-            <div>
-                <a class="menu" href="index.html">Accueil</a>
-                <a class="menu" href="myData.html">Fiche personnel</a>
-                <a class="menu" href="mySkill.html">Mes compétences</a>
-                <a class="menu" href="contact.html">Me contacter</a>
-            </div>
-        </nav>
+        <?php include "menu.php" ?>
     </header>
 
     <main>
         <div>
             <section>
                 <p class="littleTitle">Diplômes <span class="arrow"> ► </span></p>
-                <ul>
-                    <li>septembre 2004: Rammasseur de cailloux amateur</li>
-                    <li>aout 2009: Ingénieur de physique nucléaire</li>
-                    <li>juin 2015: Chasseur d'ours</li>
-                    <li>janvier 2020: Doctorat en math</li>
-                </ul>
+                <div>
+
+                </div>
             </section>
             <section>
-                <p class="littleTitle">Hobbies <span class="arrow"> ► </span></p>
-                <ul>
-                    <li>Rammaser des cailloux</li>
-                    <li>Danser</li>
-                    <li>Promener mon tigre de compagnies dans une grande ville</li>
-                    <li>Couper des arbres</li>
-                    <li>Déchirer des feuilles</li>
-                </ul>
+                <p class="littleTitle">Hobby <span class="arrow"> ► </span></p>
+                <div>
+
+                </div>
             </section>
             <section>
                 <p class="littleTitle">Expérience <span class="arrow"> ► </span></p>
-                <ul>
-                    <li>Je suis lvl 250 sur *insérer un MMORPG*</li>
-                </ul>
+                <div>
+
+                </div>
             </section>
         </div>
         <aside>
@@ -85,7 +72,6 @@
         </aside>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,14 +10,7 @@
 </head>
 <body>
 
-    <nav>
-        <div>
-            <a class="menu" href="index.html">Accueil</a>
-            <a class="menu" href="myData.html">Fiche personnel</a>
-            <a class="menu" href="mySkill.html">Mes compétences</a>
-            <a class="menu" href="contact.html">Me contacter</a>
-        </div>
-    </nav>
+<?php include "menu.php" ?>
 
     <form action="">
         <fieldset>
@@ -39,7 +33,6 @@
         </fieldset>
     </form>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
